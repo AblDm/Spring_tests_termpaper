@@ -1,15 +1,28 @@
 package com.example.termtests.dto;
 
 import com.example.termtests.exceptions.BedRequestException;
-import com.example.termtests.record.QuestionRequest;
 
 import java.util.Objects;
 
-public class Question extends QuestionRequest {
+public class Question{
     private final String question;
     private final String answer;
 
+    public String getQuestion() {
+        return question;
+    }
 
+    public String getAnswer() {
+        return answer;
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "question='" + question + '\'' +
+                ", answer='" + answer + '\'' +
+                '}';
+    }
 
     public Question(String question, String answer) {
         if (question==null || question.isBlank()) {
@@ -34,11 +47,5 @@ public class Question extends QuestionRequest {
     public int hashCode() {
         return Objects.hash(question, answer);
     }
-    @Override
-    public String toString() {
-        return "Question{" +
-                "question='" + question + '\'' +
-                ", answer='" + answer + '\'' +
-                '}';
-    }
+
 }

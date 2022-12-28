@@ -9,15 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
-
 @RestController
 @RequestMapping("/exam/java")
 public class JavaController {
     private final QuestionService service;
-    private final JavaQuestionService questionService;
+
     public JavaController(QuestionService service) {
         this.service = service;
-        this.questionService = new JavaQuestionService();
     }
 
 
@@ -42,7 +40,4 @@ public class JavaController {
         return service.remove(target);
     }
 
-    public JavaQuestionService getQuestionService() {
-        return questionService;
-    }
 }

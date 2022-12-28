@@ -1,7 +1,6 @@
 package com.example.termtests.controller;
 
 import com.example.termtests.dto.Question;
-import com.example.termtests.record.QuestionRequest;
 import com.example.termtests.service.ExaminerService;
 import com.example.termtests.service.JavaQuestionService;
 import org.springframework.web.bind.annotation.*;

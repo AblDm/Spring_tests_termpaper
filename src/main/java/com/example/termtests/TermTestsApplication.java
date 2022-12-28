@@ -10,4 +10,5 @@ public class TermTestsApplication {
         SpringApplication.run(TermTestsApplication.class, args);
     }
 
+
 }
