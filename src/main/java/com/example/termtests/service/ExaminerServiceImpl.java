@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService questionService;
@@ -18,7 +19,7 @@ public class ExaminerServiceImpl implements ExaminerService {
     @Override
     public Collection<Question> getQuestions(int amount) {
         Set<Question> result = new HashSet<>();
-        if (amount <= 0 || questionService.getAll().size()< amount) {
+        if (amount <= 0 || questionService.getAll().size() < amount) {
             throw new BedRequestException("Такого");
         }
 

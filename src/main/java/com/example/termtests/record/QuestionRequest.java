@@ -5,6 +5,7 @@ import java.util.Objects;
 public class QuestionRequest {
     private String question;
     private String answer;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

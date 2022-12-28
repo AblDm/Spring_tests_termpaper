@@ -18,8 +18,6 @@ public class JavaController {
         this.service = service;
     }
 
-
-
     @GetMapping(path = "/add")
     public Collection<Question> addQuestion(@RequestParam("question") String question,
                                             @RequestParam("answer") String answer) {

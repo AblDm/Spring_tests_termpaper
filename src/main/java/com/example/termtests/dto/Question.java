@@ -4,7 +4,7 @@ import com.example.termtests.exceptions.BedRequestException;
 
 import java.util.Objects;
 
-public class Question{
+public class Question {
     private final String question;
     private final String answer;
 
@@ -25,10 +25,10 @@ public class Question{
     }
 
     public Question(String question, String answer) {
-        if (question==null || question.isBlank()) {
+        if (question == null || question.isBlank()) {
             throw new BedRequestException("incorrect questions");
         }
-        if (answer==null ||answer.isBlank()) {
+        if (answer == null || answer.isBlank()) {
             throw new BedRequestException("incorrect questions");
         }
         this.question = question;
