@@ -1,0 +1,20 @@
+
+###Добавление вопроса
+POST http://localhost:8080/exam/java/add
+Content-Type: application/json
+
+{"question": "Test1Question",
+  "answer": "Test1Answer"
+}
+
+### Добавление вопроса 2
+POST http://localhost:8080/exam/java/add
+Content-Type: application/json
+
+{"question": "Test2Question",
+  "answer": "Test2Answer"
+}
+### Получить вопросы
+GET http://localhost:8080/exam/get/{amount}
+
+
